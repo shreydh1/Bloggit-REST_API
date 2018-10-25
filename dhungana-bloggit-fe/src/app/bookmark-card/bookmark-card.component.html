@@ -1,0 +1,7 @@
+<div class="panel panel-default">
+        <div class="panel-heading">
+             <a [routerLink]="bookmark.bookmarkId">{{bookmark.title}}</a><div class="glyphicon glyphicon-remove pull-right" (click)="deleteBookmark()"></div>
+        </div>
+        <div class="panel-body" (click)="updateTitle()">Bookmarked by: <em> {{bookmark.createdBy}}</em></div>
+     </div>
+     

@@ -1,0 +1,28 @@
+
+{
+    "project": {
+        "name": "bloggit"
+    },
+    "apps": [
+        {
+            "root": "src",
+            "outDir": "dist",
+            "index": "index.html",
+            "main": "main.ts",
+            "polyfills": "polyfills.ts",
+            "tsconfig": "tsconfig.app.json",
+            "styles": [
+                "styles.css"],
+            "assets": [
+                "assets"
+            ],
+            "test": "test.ts",
+           "testTsconfig": "tsconfig.spec.json"
+        }
+    ],
+    "test": {
+       "karma": {
+           "config": "./karma.conf.js"
+       }
+   }
+ }

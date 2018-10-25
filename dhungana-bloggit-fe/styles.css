@@ -1,0 +1,45 @@
+#bloggit {
+    background:#fff7e6;
+}
+
+.post {
+   list-style-type: none;
+   background:#ccddff;
+   border: solid 1px;
+   border-color:black;
+   margin:5px 10px 10px 5px;
+   padding: 15px;
+}          
+
+a {
+   color:#66ccff; text-decoration:none;
+}
+
+.post a {
+   color:green;
+}
+         
+.post p:first-child {
+   font-weight: bold;
+}
+   
+h1>a>img {
+   border: solid 3px black;
+}   
+
+h1 {
+ background: url("resources/notebook.png") no-repeat;
+ background-size: 30px 30px;
+ padding-left: 35px;
+}
+
+.button-row {
+ text-align: right;
+}
+.more {
+ display:inline-block;
+ background-color:#66ccff;
+ border: solid 1px black;
+ padding: 5px;
+ text-align: right;
+}

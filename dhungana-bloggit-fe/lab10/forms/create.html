@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <head>
+        <link rel="stylesheet" type="text/css" href="styles.css"></link>
+       <title>Bloggit - Posts</title>
+       <base href="..">
+       <meta charset="UTF-8">
+   </head>
+   <body>
+        <h1><a href="index.html">Bloggit > </a></h1>
+        <h2>Create a post</h2>
+        <form method = "post" onsubmit = "alert(this);">
+            <label>
+                     Body:
+                    <textarea rows="15" cols="50"></textarea>
+            </label>
+            <label>
+                Author:
+                <select>
+                    <option selected value="Brian J. Walters">Brian J. Walters</option>
+                    <option value="Beatrice Arthur">Dorthy Zbornak</option>
+                    <option value="Betty White">Rose Nylund</option>
+                    <option value="Rue McClanahan">Blanche Devereaux</option>
+                    <option value="Estelle Getty">Sophia Petrillo</option>
+                </select>
+            </label>
+            <button type="submit">Create!</button>
+        </form>
+   </body>
+</html>

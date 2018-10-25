@@ -1,0 +1,23 @@
+<h1>Bookmark Details</h1>
+<div class="bookmark panel">
+   <div>
+       <h2>{{bookmark.title}}</h2>
+       <p><a href="https://{{bookmark.url}}"><em>{{bookmark.url}}</em></a></p>
+   </div>
+   <table class="table table-bordered table-condensed">
+       <thead>
+           <tr class="info">
+               <th>Last Updated</th>
+               <th>Created On</th>
+	       <th>Bookmarked by</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>{{bookmark.lastUpdated | date}}</td>
+               <td>{{bookmark.createdOn| date}}</td>
+	       <td>{{bookmark.createdBy}}</td>
+           </tr>
+       </tbody>
+   </table>
+</div>

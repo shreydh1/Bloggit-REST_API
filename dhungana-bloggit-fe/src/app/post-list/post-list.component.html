@@ -1,0 +1,13 @@
+<h2>
+        Posts
+        <div routerLink="create" class="btn btn-primary pull-right">Create Post</div>
+     </h2>
+     <p>Select a post from the list below.</p>
+     
+     <post-card *ngFor="let post of posts | postSort" [post]="post" (postDeleted)="handlePostDeleted($event)"></post-card>
+        
+     <div *ngIf="error" class="alert alert-danger">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>
+        {{error.error.message ? error.error.message : 'There was an error retrieving posts.'}}
+     </div>
+     

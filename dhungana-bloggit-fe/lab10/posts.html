@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html>
+   <head>
+       <title>Bloggit</title>
+       <base href=".">
+       <meta charset="UTF-8">
+       <style>
+              #bloggit {
+               background:#fff7e6;
+              }
+               .post {
+               list-style-type: none; 
+               background:#ccddff; 
+               border: solid 1px; 
+               border-color:black;
+               margin:5px 10px 10px 5px; 
+               padding: 15px;
+           }
+           a {
+               color:green; text-decoration:none;
+           }
+           post p:first-child {
+               font-weight: bold;
+           }
+           
+        </style>
+        <link rel="stylesheet" type="text/css" href="styles.css"></link>
+        <scrip type = "text/javascript" src = "script.js"> 
+            
+
+        </script>
+   </head>
+   <body id = "bloggit" onload ="initialize();">
+        <h1>Bloggit</h1>
+        <h2>Posts</h2>
+        <h1><a href="index.html">Bloggit</a></h1> 
+       
+        <h2>Posts</h2>
+        <p>Select a post from the list below:</p>
+        <ul>
+                <li style = "list-style-type: none; 
+                    background:#ccddff; 
+                    border: solid 1px; 
+                    border-color:black;
+                    margin:5px 10px 10px 5px; 
+                    padding: 15px;">
+                <h1><a href="post1.html">Post1</a></h1> 
+            
+                    <p><b><a>A first post</a></b></p>
+                    <p>This is the body of our first blog post.</p>
+                </li>
+                <li>
+                    <p><a>A second post</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan erat nec justo tempor, ut posuere nisl pretium. Morbi rutrum mauris eu turpis convallis iaculis. </p>
+                </li>
+                <li>
+                    <p><a>Another long post</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa orci, dapibus ut dolor sed, venenatis viverra risus.</p>
+                </li>
+                <li>
+                    <p><a>A fourth post</a></p>
+                    <p>This is the body of our fourth blog post.</p>
+                </li>
+                <li>
+                        <p><b><a>A first post</a></b></p>
+                        <p>This is the body of our <i>first</i> blog post.</p>
+                </li>
+                <li class="post"></li>
+            
+
+        </ul>
+   </body>
+</html>

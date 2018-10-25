@@ -1,0 +1,30 @@
+
+body {
+    background:#fff7e6;
+ }
+ .post {
+    list-style-type: none; 
+    background:#ccddff; 
+    border: solid 1px; 
+    border-color:black;
+    margin:5px 10px 10px 5px; 
+    padding: 15px;
+ }
+ a {
+    color:green; text-decoration:none;
+
+}
+.post p:first-child {
+    font-weight: bold;
+}
+
+.button-row {
+    text-align: right;
+ }
+ .more {
+    display:inline-block;
+    background-color:#66ccff;
+    border: solid 1px black;
+    padding: 5px;
+    text-align: right;
+ }

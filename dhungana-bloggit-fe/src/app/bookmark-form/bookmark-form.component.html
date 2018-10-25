@@ -1,0 +1,40 @@
+<h1>Bookmark Form</h1>
+<form>
+   <div class="form-group">
+       <label for="title">Title</label>
+       <input type="text" class="form-control" id="title" name="title" [(ngModel)]="bookmark.title" required>
+   </div>
+   <div class="form-group">
+       <label for="url">URL</label>
+       <input type="url" class="form-control" id="url" name="url" [(ngModel)]="bookmark.url" required>
+   </div>
+   <div class="form-group">
+       <label for="isVisible">Visibility</label>
+       <select type="number" class="form-control" id="isVisible" name="isVisible" [(ngModel)]="bookmark.isVisible" required>
+           <option value="true">Visible</option>
+           <option value="false">Not visible</option>
+       </select>	
+   </div>
+   <div class="form-group">
+       <label for="priority">Priority</label>
+       <input type="number" class="form-control" id="priority" name="priority" [(ngModel)]="bookmark.priority" required>
+   </div>
+   <div class="form-group">
+       <label for="createdBy">Created by</label>
+       <input type="text" class="form-control" id="createdBy" name="createdBy" [(ngModel)]="bookmark.createdBy" required>
+   </div>
+   <button type="submit" class="btn btn-primary" (click)="submitBookmark()">
+       Submit
+   </button>
+</form>
+<div *ngIf="error" class="alert alert-danger">
+   <span class="glyphicon glyphicon-exclamation-sign"></span>
+   {{error.error.message ? error.error.message : 'There was an error saving your bookmark.'}}
+</div>
+<p>
+   url: {{bookmark.url}}
+</p>
+<p>
+   fullUrl: {{bookmark.fullUrl}}
+</p>
+
